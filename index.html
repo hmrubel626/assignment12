@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Bootstrap5</title>
+  </head>
+  <body>
+    
+    <h1>This is Bootstrap heading h1</h1>
+    <h5>This is Bootstrap heading h5</h5>
+
+
+    <p class="h1">This is Bootstrap Paragraph h1</p>
+    <p class="h2">This is Bootstrap Paragraph h2</p>
+    <p class="h5">This is Bootstrap Paragraph h5</p>
+
+
+    <h4>Fancy display heading With faded <code class="text-muted">secondary text</code></h4>
+
+    <h1 class="display-1">Display</h1>
+    <h3 class="display-6">Display</h3>
+
+    <section class="text-center">
+      <p><abbr title="attribute">attr</abbr></p>
+    <p><abbr title="HyperText Markup Language " class="initialism">HTML</abbr></p>
+    </section>
+
+    <p class="blockquote text-center">A well-known quote, contained in a blockquote element.</p>
+    <p class="blockquote-footer text-center">Someone famous in <em>Source Title</em></p>
+
+    <figure>
+  <blockquote class="blockquote">
+    <p>A well-known quote, contained in a blockquote element.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </figcaption>
+</figure>
+
+  <ul class="list-unstyled">
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Mango</li>
+  </ul>
+
+  <ul class="list-inline">
+    <li class="list-inline-item">Apple</li>
+    <li class="list-inline-item">Orange</li>
+    <li class="list-inline-item">Mango</li>
+  </ul>
+
+  <!--<dl class="row">
+    <dt class="col-sm-3">Description lists</dt>
+    <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+  </dl>
+
+  <dl class="row">
+    <dt class="col-sm-4">Nested definition list</dt>
+    <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+  </dl>-->
+
+  <div class="text-center">
+    <img src="images/flower1.jpg" class="rounded float-center" alt="flower" width="80%">
+  </div> <br><br>
+
+  <section class="text-center">
+    <div class="row">
+    <div class="col-lg">
+    <img src="images/flower2.jpg" class="rounded float-start" alt="flower" width="90%" height="400px">
+  </div>
+    <div class="col-lg">
+    <img src="images/flower3.jpg" class="rounded float-end" alt="flower" width="90%" height="400px">
+    </div>
+  </div>
+  </section> <br><br>
+
+  <section class="text-center table-responsive">
+    <table class="table table-bordered border-primary table-hover">
+      <thead class="table-dark">
+      <tr>
+        <th scope="row">Serial Number</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-primary">
+      <th scope="row">1</th>
+      <td>Md Rubel</td>
+      <td>Hossain</t>
+      <td>hmrubel626@gmail.com</td>
+      <td>+8801744968253</td>
+      </tr>
+
+      <tr class="table-secondary">
+      <th scope="row">2</th>
+      <td>Md Rubel</td>
+      <td>Hossain</t>
+      <td>hmrubel626@gmail.com</td>
+      <td>+8801744968253</td>
+      </tr>
+
+      <tr class="table-info">
+      <th scope="row">3</th>
+      <td>Md Rubel</td>
+      <td>Hossain</t>
+      <td>hmrubel626@gmail.com</td>
+      <td>+8801744968253</td>
+      </tr>
+
+      <tr class="table-danger">
+      <th scope="row">4</th>
+      <td>Md Rubel</td>
+      <td>Hossain</t>
+      <td class="table-active">hmrubel626@gmail.com</td>
+      <td>+8801744968253</td>
+      </tr> 
+      
+    </tbody>
+    </table>
+  </section>
+
+  <!--Form Start-->
+
+  <h1 class="text-center"><u>Fill in the Form</u></h1>
+
+  <form class="row g-3 needs-validation" novalidate>
+  
+  <div class="col-md-6">
+    <label for="f_name" class="form-label">First name</label>
+    <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter your first name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+        Enter your first name.
+    </div>
+  </div>
+  
+  <div class="col-md-6">
+    <label for="l_name" class="form-label">Last name</label>
+    <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter your first name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+        Enter your last name.
+    </div>
+  </div>
+  
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">State</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>Dhaka</option>
+      <option>Khulna</option>
+      <option>Barisal</option>
+      <option>Cumilla</option>
+      <option>Sylhet</option>
+      <option>Dinajpur</option>
+    </select>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+
+  <!--Form End-->
+
+
+    <!-- JS links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
